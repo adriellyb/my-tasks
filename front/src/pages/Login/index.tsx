@@ -10,7 +10,7 @@ function Login() {
         <div>
             <Grid container spacing={0} columns={16}>
                 <Grid item xs={8} style={{ boxShadow: "15px 0px 39px -18px rgba(0,0,0,0.72)", boxSizing: "border-box" }}>
-                    <Paper elevation={0} square={true} style={{ backgroundImage: `url(${image})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: 969 }} />
+                    <Paper elevation={0} square={true} style={{ backgroundImage: `url(${image})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", height: window.innerHeight }} />
                 </Grid>
                 <Grid item xs={8}>
                     <Container maxWidth="sm">
