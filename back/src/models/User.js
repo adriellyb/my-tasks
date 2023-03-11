@@ -1,5 +1,6 @@
 const DataTypes = require("sequelize");
 const sequelize = require("../config/sequelize");
+const Task = require("./Task");
 
 const User = sequelize.define('User', {
 
@@ -17,6 +18,7 @@ const User = sequelize.define('User', {
                 msg: "Você deve adicionar um email válido."
             },
         }
+        
     },
 
     senha: {
@@ -30,5 +32,9 @@ const User = sequelize.define('User', {
     },
 
 });
+
+User.associate = function (models) {
+    User.hasMany(models.Task);
+}
 
 module.exports = User;

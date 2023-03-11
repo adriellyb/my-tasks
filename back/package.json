@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate": "node src/database/migrate.js",
     "seed": "node src/database/seeders/seeder.js",
-    "keys": "node src/config/generateRSAKeys.js"
+    "keys": "node src/config/generateRSAKeys.js",
+    "dev": "node-dev --no-notify src/app.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mysql": "^2.18.1",
+    "node-dev": "^8.0.0",
     "sequelize": "^6.6.2",
     "sqlite3": "^5.0.2"
   }
